@@ -1,11 +1,16 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');/*google font*/
+
 *{
     padding: 0; /*space betn border and content*/
     margin: 0; /*space betn border and outside*/
     box-sizing:border-box;/* allows us to include the padding and border in an element's total width and height*/
 }
 
+
 body{
     background-color: #8e44ad; /*tag selector for background color of body*/
+    font-family: 'Roboto', sans-serif;/*google font*/
 }
 /* . is used for class selectors*/
 .main{
@@ -14,11 +19,26 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;/*to take in center*/
+    flex-direction: column;
+    
 }
-/*# is used for class selectors*/
+/*# is used for id selectors*/
 #box{
     width:40%;
-    height:400px;
+    padding: 15px;
     box-shadow: 0px 0px 5px grey;/*used for shadow*/
     background-color: aqua;
+    border-radius: 5px;
+}
+
+.row{
+    width: 100%;
+    margin: 2rem;
+    margin-left: 0;
+}
+.btn{
+    width: 100%;
+    padding:5px;
+    background-color: lightskyblue;
+    border-radius: 5px;
 }
